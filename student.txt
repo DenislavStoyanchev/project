@@ -1,0 +1,17 @@
+mkdir git-intro
+cd git-intro
+git init
+echo "<Denislav> <20110>" > student.txt
+git status
+git add student.txt
+git commit -m "Initial commit with hello.txt"
+echo "Оценка:6" >> student.txt
+git status
+git diff
+git add student.txt
+git commit -m "Updated student.txt with new information"
+git log
+git config user.email 20110@uktc-bg.com
+git config user.name DenislavStoyanchev
+git remote add origin https://github.com/DenislavStoyanchev/project/new/main.git
+git push -u origin master
